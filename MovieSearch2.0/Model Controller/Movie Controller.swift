@@ -32,9 +32,37 @@ class MovieController {
         guard let finalUrl = components?.url else { compeletion(nil) ; return}
         print("📡📡📡\(finalUrl.absoluteString)📡📡📡")
         //Request
+        var request = URLRequest(url: finalUrl)
+        request.httpMethod = "GET"
+        request.httpBody = nil
+        
         //URLSession DataTask + Resume + decode data
+        URLSession.shared.dataTask(with: request) { (data, _, error) in
+            if let error = error {
+                print("❌Error with dataTask: \(error.localizedDescription)")
+                compeletion(nil) ; return
+            }
+            guard let data = data else { compeletion(nil) ; return }
+            let jsonDecoder = JSONDecoder()
+            do {
+                let topLevelData = try jsonDecoder.decode(TopLevelData.self, from: data)
+                let movies = topLevelData.results
+                compeletion(movies) ; return
+            } catch {
+                print("❌ Error decoding data: \(error.localizedDescription)")
+                compeletion(nil) ; return
+            }
+        }.resume()
     }
     // fetchImage
+    static func fetchImage(imageString: String, completion: @escaping ((UIImage?) -> Void) {
+        
+        //URL
+        let imageStringUrl = "http://image.tmdb.org/t/p/w500/" + imageString
+        print()
+        //Request
+        //URLSession + Resume + decode data
+    }
 }
 
 

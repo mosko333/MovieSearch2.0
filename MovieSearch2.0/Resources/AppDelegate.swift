@@ -16,11 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-//        MovieController.fetchMovies(searchTerm: "fish") { (Movie) in
-//
+//        MovieController.fetchMovies(searchTerm: "fish") { (movies) in
+//            print(movies?.count)
 //        }
-        
-        // Testing github
+
         
         return true
     }
