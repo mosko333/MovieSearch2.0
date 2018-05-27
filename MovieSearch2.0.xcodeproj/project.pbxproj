@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E41E97520BA2CBB00A59438 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41E97420BA2CBB00A59438 /* Movie.swift */; };
+		7E41E97720BA303E00A59438 /* Movie Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E41E97620BA303E00A59438 /* Movie Controller.swift */; };
 		7E66D43920B65DA200DE4F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E66D43820B65DA200DE4F46 /* AppDelegate.swift */; };
 		7E66D43E20B65DA200DE4F46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E66D43C20B65DA200DE4F46 /* Main.storyboard */; };
 		7E66D44020B65DA300DE4F46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E66D43F20B65DA300DE4F46 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E41E97420BA2CBB00A59438 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		7E41E97620BA303E00A59438 /* Movie Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie Controller.swift"; sourceTree = "<group>"; };
 		7E66D43520B65DA200DE4F46 /* MovieSearch2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieSearch2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E66D43820B65DA200DE4F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E66D43D20B65DA200DE4F46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,6 +66,7 @@
 		7E41E97220BA2B9700A59438 /* Model Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7E41E97620BA303E00A59438 /* Movie Controller.swift */,
 			);
 			path = "Model Controller";
 			sourceTree = "<group>";
@@ -69,6 +74,7 @@
 		7E41E97320BA2BA500A59438 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7E41E97420BA2CBB00A59438 /* Movie.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,6 +178,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E41E97720BA303E00A59438 /* Movie Controller.swift in Sources */,
+				7E41E97520BA2CBB00A59438 /* Movie.swift in Sources */,
 				7E66D43920B65DA200DE4F46 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
